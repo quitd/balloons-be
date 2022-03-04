@@ -17,14 +17,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     ],\
     "dependencyTreeRoots": [\
       {\
-        "name": "blcron",\
+        "name": "mmmm",\
         "reference": "workspace:."\
       }\
     ],\
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
-      ["blcron", ["workspace:."]]\
+      ["mmmm", ["workspace:."]]\
     ],\
     "fallbackPool": [\
     ],\
@@ -33,17 +33,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
-            ["cross-fetch", "npm:3.1.5"],\
-            ["deta", "npm:1.0.2"]\
-          ],\
-          "linkType": "SOFT"\
-        }]\
-      ]],\
-      ["blcron", [\
-        ["workspace:.", {\
-          "packageLocation": "./",\
-          "packageDependencies": [\
-            ["blcron", "workspace:."],\
             ["cross-fetch", "npm:3.1.5"],\
             ["deta", "npm:1.0.2"]\
           ],\
@@ -68,6 +57,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["node-fetch", "virtual:e414995db9c779306e687c7a7c66965e66d0cd7270f6b9fc4f00cc9772c5d50b305ab83e142e0e21dbf10968f7437cbdfcb170d05f4bde68707ac7d0082c9cca#npm:2.6.7"]\
           ],\
           "linkType": "HARD"\
+        }]\
+      ]],\
+      ["mmmm", [\
+        ["workspace:.", {\
+          "packageLocation": "./",\
+          "packageDependencies": [\
+            ["mmmm", "workspace:."],\
+            ["cross-fetch", "npm:3.1.5"],\
+            ["deta", "npm:1.0.2"]\
+          ],\
+          "linkType": "SOFT"\
         }]\
       ]],\
       ["node-fetch", [\
