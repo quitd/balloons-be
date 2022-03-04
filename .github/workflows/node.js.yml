@@ -2,6 +2,8 @@ name: Scan topic
 
 on:
   workflow_dispatch:
+  schedule: 
+    - cron: "*/5 * * * *"
   
 env:
   DETA_PROJECT_KEY: ${{ secrets.DETA_KEY }}
