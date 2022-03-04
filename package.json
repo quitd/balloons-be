@@ -6,6 +6,6 @@
     "deta": "^1.0.2"
   },
   "scripts": {
-    "do": "node index.js"
+    "do": "node do.js"
   }
 }
