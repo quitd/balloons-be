@@ -17,4 +17,4 @@ jobs:
         cache: 'npm'
     - run: |
         yarn
-        node index.js
+        yarn do
