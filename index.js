@@ -1,4 +1,4 @@
-const { app, Deta } = require('deta');
+const { Deta } = require('deta');
 const fetch = require('cross-fetch');
 
 const deta = Deta(process.env.DETA_PROJECT_KEY)
@@ -6,9 +6,7 @@ const db = deta.Base('conf');
 const users = deta.Base('amounts');
 const trans = deta.Base('transactions');
 
-// define a function to run on a schedule
-// the function must take an event as an argument
-app.lib.cron(async event => {
+(async () => {
   let last = await db.get('last')
   if(!last) last = {value:0};
   const a = await fetch('https://api.allorigins.win/raw?url='+encodeURIComponent('https://forum.gethopscotch.com/t/'+61353+'.json?d='+new Date().getTime()));
@@ -46,6 +44,4 @@ app.lib.cron(async event => {
       };
     }
   }
-});
-
-module.exports = app;
+})();
