@@ -7,7 +7,7 @@ app.lib.cron(e => {
     headers: {
       Authorization: 'token '+process.env.GH
     }
-  })
+  }).then(g => {if(!g.ok) console.log(g)})
 })
 
 module.exports = app;
